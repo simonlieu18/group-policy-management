@@ -3,7 +3,7 @@
 </p>
 
 <h1>Group Policy Management</h1>
-In this tutorial, we configure an account lockout policy in Active Directory using Group Policy Management.<br />
+In this tutorial, we implement a new account lockout policy in Active Directory using Group Policy Management.<br />
 
 
 
