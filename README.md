@@ -43,7 +43,7 @@ Edit the newly created policy and navigate to "Account Lockout Policy" and confi
 ![image](https://github.com/user-attachments/assets/a3e33e0b-f740-4e79-ba45-3a2a62bfcce3)
 
 <p>
-Link the organizational unit/domain to the new policy that was created
+Link the organizational unit/domain to the new policy that was created. Then unlink "Default Domain Policy" so that it won't interfere with "Account Lockout Policy".
 </p>
 <br />
 
