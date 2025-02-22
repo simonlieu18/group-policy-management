@@ -40,16 +40,15 @@ Edit the newly created policy and navigate to "Account Lockout Policy" and confi
 </p>
 <br />
 
-![image](https://github.com/user-attachments/assets/320ea222-0e55-4139-a724-ff6b6f818144)
-
+![image](https://github.com/user-attachments/assets/a3e33e0b-f740-4e79-ba45-3a2a62bfcce3)
 
 <p>
-Verify and test the new policy by logging into a user's account with incorrect information.
+Link the organizational unit/domain to the new policy that was created
 </p>
 <br />
-![image](https://github.com/user-attachments/assets/320ea222-0e55-4139-a724-ff6b6f818144)
 
+![image](https://github.com/user-attachments/assets/a6d13c02-71fe-4ef8-bbb5-32d18fd06c93)
 
 <p>
-Verify and test the new policy by logging into a user's account with incorrect information.
+Manually update the Group Policy by opening Powershell and inputting the command "gpudate /force". Then run command "rsop.msc" to verify that the policy has been applied.
 </p>
