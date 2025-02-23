@@ -26,29 +26,29 @@ In this tutorial, we implement a new account lockout policy in Active Directory 
 
 <h2>Configuration Steps</h2>
 
-![image](https://github.com/user-attachments/assets/9e9d5ee7-21dd-4f5e-89a5-cfb724547c9e)
+![image](https://github.com/user-attachments/assets/93c1dc1d-a4c2-45c3-8daf-82197400122c)
 
 <p>
-In the Group Policy Management locate "Group Policy Objects" and add a new policy called "Account Lockout Policy"
+On the data center, in the Group Policy Management locate "Group Policy Objects" and add a new policy called "Account Lockout Policy" or if there already is a policy linked to the domain then just skip this step.
 </p>
 <br />
 
-![image](https://github.com/user-attachments/assets/65857da6-1625-42f7-bd9f-fa606bc5c2ca)
+![image](https://github.com/user-attachments/assets/388eb47f-8c69-41ab-92ff-ef8432f11254)
 
 <p>
-Edit the newly created policy and navigate to "Account Lockout Policy" and configure policy as needed.
+Edit the policy, navigate to "Account Lockout Policy" and configure the policy as needed.
 </p>
 <br />
 
-![image](https://github.com/user-attachments/assets/a3e33e0b-f740-4e79-ba45-3a2a62bfcce3)
+![image](https://github.com/user-attachments/assets/ca55fe10-a157-4ac9-8da1-f049da1ee459)
 
 <p>
-Link the organizational unit/domain to the new policy that was created. Then unlink "Default Domain Policy" so that it won't interfere with "Account Lockout Policy".
+Link the organizational unit/domain to the new policy that was created unless the policy was already connected.
 </p>
 <br />
 
-![image](https://github.com/user-attachments/assets/a6d13c02-71fe-4ef8-bbb5-32d18fd06c93)
+![image](https://github.com/user-attachments/assets/3de7d8e1-79e0-44fc-85df-a723ee64e170)
 
 <p>
-Manually update the Group Policy by opening Powershell and inputting the command "gpudate /force". Then run command "rsop.msc" to verify that the policy has been applied.
+Now on the client machine, manually update the Group Policy by opening Powershell and inputting the command "gpudate /force". Then run the command "rsop.msc" to verify that the policy has been applied.
 </p>
