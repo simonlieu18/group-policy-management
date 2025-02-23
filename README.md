@@ -29,7 +29,7 @@ In this tutorial, we implement a new account lockout policy in Active Directory 
 ![image](https://github.com/user-attachments/assets/93c1dc1d-a4c2-45c3-8daf-82197400122c)
 
 <p>
-On the data center, in the Group Policy Management locate "Group Policy Objects" and add a new policy called "Account Lockout Policy" or if there already is a policy linked to the domain then just skip this step.
+On the data center virtual machine, in the Group Policy Management locate "Group Policy Objects" and add a new policy called "Account Lockout Policy" or if there already is a policy linked to the domain then just skip this step.
 </p>
 <br />
 
@@ -50,5 +50,5 @@ Link the organizational unit/domain to the new policy that was created unless th
 ![image](https://github.com/user-attachments/assets/3de7d8e1-79e0-44fc-85df-a723ee64e170)
 
 <p>
-Now on the client machine, manually update the Group Policy by opening Powershell and inputting the command "gpudate /force". Then run the command "rsop.msc" to verify that the policy has been applied.
+Now on the client virtual machine, manually update the Group Policy by opening Powershell and inputting the command "gpudate /force". Then run the command "rsop.msc" to verify that the policy has been applied.
 </p>
