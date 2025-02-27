@@ -16,7 +16,7 @@ In this tutorial, we implement a new account lockout policy in Active Directory 
 
 <h2>Operating Systems Used </h2>
 
-- Ubuntu Server 20.04
+- Windows Server 2022
 
 <h2>High-Level Steps</h2>
 
